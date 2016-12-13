@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VvarriorsApplication {
+public class VvarriorsApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VvarriorsApplication.class, args);
+		SpringApplication.run(VvarriorsApp.class, args);
 	}
 }
