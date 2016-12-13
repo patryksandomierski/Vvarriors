@@ -4,17 +4,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.oliwa</groupId>
-	<artifactId>VVarriors</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>Vvarriors</artifactId>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>VVarriors</name>
-	<description>First attempt creating spring VVarriors site</description>
+	<name>Vvarriors</name>
+	<description>nothing interesting at this moment</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.5.RELEASE</version>
+		<version>1.4.2.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -29,19 +29,27 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<optional>true</optional>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
 		</dependency>
 	</dependencies>
 
@@ -53,6 +61,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>
