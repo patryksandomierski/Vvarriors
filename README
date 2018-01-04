@@ -1,0 +1,2 @@
+mvn package
+Procfile - heroku's hook

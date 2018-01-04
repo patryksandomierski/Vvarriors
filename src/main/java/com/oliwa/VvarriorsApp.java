@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class VvarriorsApp {
 
-	public static void main(String[] args) {
-		SpringApplication.run(VvarriorsApp.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(VvarriorsApp.class, args);
+    }
 }
