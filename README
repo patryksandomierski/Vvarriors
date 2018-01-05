@@ -1,2 +1,3 @@
-mvn package
-Procfile - heroku's hook
+mvn clean install // on start, to install npm, node, webpack
+mvn webpack // to update bundle.js
+Procfile // heroku's hook

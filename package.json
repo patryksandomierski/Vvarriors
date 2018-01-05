@@ -1,6 +1,6 @@
 {
   "name": "Vvarriors",
-  "version": "0.3",
+  "version": "0.0.3",
   "dependencies": {
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
