@@ -12,30 +12,30 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-		    users: []
+			users: []
 		};
 	}
 
 	componentDidMount() {
-		client({method: 'GET', path: '/api/users'}).done(response => {
-			this.setState({users: response.entity._embedded.users});
+		client({ method: 'GET', path: '/api/users' }).done(response => {
+			this.setState({ users: response.entity._embedded.users });
 		});
 	}
 
 	render() {
 		return (
-			<EmployeeList users={this.state.users}/>
+			<EmployeeList users={this.state.users} />
 		)
 	}
 }
 // end::app[]
 
 // tag::employee-list[]
-class EmployeeList extends React.Component{
+class EmployeeList extends React.Component {
 	render() {
-	    console.log(this.props.users);
+		console.log(this.props.users);
 		var users = this.props.users.map(user =>
-			<Employee key={user._links.self.href} user={user}/>
+			<Employee key={user._links.self.href} user={user} />
 		);
 		return (
 			<table>
@@ -54,7 +54,7 @@ class EmployeeList extends React.Component{
 // end::employee-list[]
 
 // tag::employee[]
-class Employee extends React.Component{
+class Employee extends React.Component {
 	render() {
 		return (
 			<tr>
