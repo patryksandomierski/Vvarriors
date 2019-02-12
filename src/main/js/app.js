@@ -20,7 +20,7 @@ class App extends React.Component {
 		client({ method: 'GET', path: '/api/users' }).done(response => {
 			this.setState({ users: response.entity._embedded.users });
 		});
-	}
+	} a
 
 	render() {
 		return (
